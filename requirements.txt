@@ -1,0 +1,17 @@
+langchain
+langchain-core
+langsmith
+streamlit
+openai
+python-dotenv
+numpy
+pandas
+requests
+PyYAML
+langchain_openai
+pypdf
+chromadb
+sentence-transformers==2.2.2
+langchain_community
+langchain_experimental
+-e . 
