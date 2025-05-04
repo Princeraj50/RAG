@@ -4,6 +4,7 @@ WORKDIR /app
 
 COPY . /app
 
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["python3", "app.py"]
+# Set Streamlit to run properly in Docker
+CMD ["streamlit", "run", "app.py", "--server.address=0.0.0.0", "--server.port=8501"]
